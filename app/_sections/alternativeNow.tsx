@@ -21,7 +21,7 @@ const Alternative: React.FC = (suggestions) => {
     <div className="text-center">
       <h2 className="text-sm font-bold mb-2">Alternative Now</h2>
       <div>
-        <div className="border border-[#2CCCFC] p-2">
+        <div className="border border-custom_blue p-2">
           <h3 className="text-xs mb-3 font-semibold">
             Select Domain (-s) for Job Suggestions
           </h3>
@@ -32,8 +32,8 @@ const Alternative: React.FC = (suggestions) => {
                 onClick={() => toggleSelection(suggestion.id)}
                 className={`cursor-pointer rounded-2xl mx-[1px] py-1 px-[6px] text-xs font-normal ${
                   selectedSuggestions.includes(suggestion.id)
-                    ? "bg-[#298dac] text-white border-2 border-[#298dac]" // Apply your selected color class
-                    : "bg-transparent text-black border-2 border-[#2CCCFC]" // Apply your default color class
+                    ? "bg-dark_custom_blue text-white border-2 border-dark_custom_blue" // Apply your selected color class
+                    : "bg-transparent text-black border-2 border-custom_blue" // Apply your default color class
                 }`}
               >
                 {suggestion.title}
@@ -41,10 +41,10 @@ const Alternative: React.FC = (suggestions) => {
             ))}
           </div>
         </div>
-        <div className="border border-t-0 border-[#2CCCFC] p-2">
+        <div className="border border-t-0 border-custom_blue p-2">
           <p className="text-xs font-medium">
             How good a fit should an Alternative Now be with your current
-            skillset?{" "}
+            skillset?
           </p>
           <p className="text-xs font-medium">
             Setting this will allow an accepted gap you are ready to bridge.
@@ -52,6 +52,8 @@ const Alternative: React.FC = (suggestions) => {
 
           <PercentageBar />
         </div>
+
+        <div></div>
       </div>
     </div>
   );

@@ -18,9 +18,9 @@ const PercentageBar: React.FC = () => {
         min="0"
         max="100"
         step="1"
-        defaultValue={percentage.toString()} // Initialize with the percentage state
-        onInput={handlePercentageChange} // Use onInput event
-        className="w-full transition-all duration-300 ease-in-out"
+        defaultValue={percentage.toString()}
+        onInput={handlePercentageChange}
+        className="w-full transition-all duration-300 ease-in-out bg-dark_custom_blue"
       />
       <div className="text-center">
         <span className="font-medium text-xs">{Math.round(percentage)}%</span>
