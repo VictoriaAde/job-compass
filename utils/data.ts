@@ -11,3 +11,90 @@ export const jobSuggestions = [
   { id: 10, title: "Services" },
   { id: 11, title: "STEM, Science, Technology, Engineering, Math" },
 ];
+
+export const possibleJobs = [
+  {
+    id: 1,
+    profile: "Chief Executives",
+    missingSkill: 7,
+    availableJobs: 2,
+  },
+  {
+    id: 2,
+    profile: "Chief Sustainabilty Officers",
+    missingSkill: 4,
+    availableJobs: 2,
+  },
+  {
+    id: 3,
+    profile: "General and Operations Managers",
+    missingSkill: 11,
+    availableJobs: 2,
+  },
+  {
+    id: 4,
+    profile: "Legislators",
+    missingSkill: 1,
+    availableJobs: 4,
+  },
+  {
+    id: 5,
+    profile: "Advertising and Promotions Managers",
+    missingSkill: 19,
+    availableJobs: 2,
+  },
+  {
+    id: 6,
+    profile: "Green Marketers",
+    missingSkill: 2,
+    availableJobs: 2,
+  },
+  {
+    id: 7,
+    profile: "Marketing Managers",
+    missingSkill: 3,
+    availableJobs: 3,
+  },
+  {
+    id: 8,
+    profile: "Green Marketers",
+    missingSkill: 2,
+    availableJobs: 2,
+  },
+  {
+    id: 9,
+    profile: "Green Marketers",
+    missingSkill: 2,
+    availableJobs: 2,
+  },
+  {
+    id: 10,
+    profile: "Advertising and Promotions Managers",
+    missingSkill: 19,
+    availableJobs: 2,
+  },
+  {
+    id: 11,
+    profile: "Legislators",
+    missingSkill: 1,
+    availableJobs: 4,
+  },
+  {
+    id: 12,
+    profile: "Chief Executives",
+    missingSkill: 7,
+    availableJobs: 2,
+  },
+  {
+    id: 13,
+    profile: "Chief Executives",
+    missingSkill: 7,
+    availableJobs: 2,
+  },
+  {
+    id: 14,
+    profile: "Chief Executives",
+    missingSkill: 7,
+    availableJobs: 2,
+  },
+];

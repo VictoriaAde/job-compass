@@ -24,7 +24,7 @@ const Alternative: React.FC = (suggestions) => {
     <div className="text-center">
       <h2 className="text-sm font-bold mb-2">Alternative Now</h2>
       <div>
-        <div className="border border-custom_blue p-2">
+        <div className="border border-custom_blue rounded-sm p-2">
           <h3 className="text-xs mb-3 font-semibold">
             Select Domain (-s) for Job Suggestions
           </h3>
@@ -44,7 +44,7 @@ const Alternative: React.FC = (suggestions) => {
             ))}
           </div>
         </div>
-        <div className="border border-t-0 border-custom_blue p-2">
+        <div className="border border-t-0 border-custom_blue rounded-sm p-2">
           <p className="text-[0.70rem] font-medium mb-1">
             How good a fit should an Alternative Now be with your current
             skillset?
@@ -58,7 +58,7 @@ const Alternative: React.FC = (suggestions) => {
 
         <div>
           <h3 className="text-xs mb-1 font-semibold mt-5">Common</h3>
-          <div className="border border-custom_green p-2 ">
+          <div className="border border-custom_green rounded-sm p-2 ">
             <p className="text-xs font-normal">
               Example Jobs need to comply with my job preference
             </p>
