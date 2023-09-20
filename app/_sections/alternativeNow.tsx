@@ -3,9 +3,12 @@
 import React, { useState } from "react";
 import { jobSuggestions } from "../../utils/data";
 import PercentageBar from "@/components/PercentageBar";
+import ToggleSwitch from "@/components/ToggleSwitch";
 
 const Alternative: React.FC = (suggestions) => {
   const [selectedSuggestions, setSelectedSuggestions] = useState<number[]>([]);
+  const [isChecked1, setIsChecked1] = useState(false);
+  const [isChecked2, setIsChecked2] = useState(false);
 
   const toggleSelection = (id: number) => {
     setSelectedSuggestions((prevSelected) => {
@@ -30,10 +33,10 @@ const Alternative: React.FC = (suggestions) => {
               <span
                 key={suggestion.id}
                 onClick={() => toggleSelection(suggestion.id)}
-                className={`cursor-pointer rounded-2xl mx-[1px] py-1 px-[6px] text-xs font-normal ${
+                className={`cursor-pointer rounded-2xl mx-[1px] py-1 px-[6px] text-[0.70rem] ${
                   selectedSuggestions.includes(suggestion.id)
-                    ? "bg-dark_custom_blue text-white border-2 border-dark_custom_blue" // Apply your selected color class
-                    : "bg-transparent text-black border-2 border-custom_blue" // Apply your default color class
+                    ? "bg-dark_custom_blue text-white border-2 border-dark_custom_blue font-medium"
+                    : "bg-transparent text-black border-2 border-custom_blue"
                 }`}
               >
                 {suggestion.title}
@@ -42,34 +45,44 @@ const Alternative: React.FC = (suggestions) => {
           </div>
         </div>
         <div className="border border-t-0 border-custom_blue p-2">
-          <p className="text-xs font-medium">
+          <p className="text-[0.70rem] font-medium mb-1">
             How good a fit should an Alternative Now be with your current
             skillset?
           </p>
-          <p className="text-xs font-medium">
+          <p className="text-[0.70rem] font-medium">
             Setting this will allow an accepted gap you are ready to bridge.
           </p>
 
           <PercentageBar />
         </div>
 
-        <div></div>
+        <div>
+          <h3 className="text-xs mb-1 font-semibold mt-5">Common</h3>
+          <div className="border border-custom_green p-2 ">
+            <p className="text-xs font-normal">
+              Example Jobs need to comply with my job preference
+            </p>
+            <ToggleSwitch
+              id="exampleJobs"
+              checked={isChecked1}
+              onChange={setIsChecked1}
+            />
+          </div>
+
+          <div className="border border-t-0 border-custom_green p-2 ">
+            <p className="text-xs font-normal">
+              Share Possible Futures with potential Employeers
+            </p>
+            <ToggleSwitch
+              id="possibleJobs"
+              checked={isChecked2}
+              onChange={setIsChecked2}
+            />
+          </div>
+        </div>
       </div>
     </div>
   );
 };
 
 export default Alternative;
-{
-  /* <span>Adminstration & Managemen</span>
-<span>Communication</span>
-<span>Culture, Sports and Entertainment</span>
-<span>IT</span>
-<span>land & Sea & Air</span>
-<span>land & Sea & Air</span>
-<span>Life & Death</span>
-<span>Manufacturing and Working with Materials</span>
-<span>Sales and Marketing</span>
-<span>Services</span>
-<span>STEM, Science, Technology, Engineering, Math</span> */
-}

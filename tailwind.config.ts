@@ -12,6 +12,8 @@ const config: Config = {
         custom_blue: "#2CCCFC",
         dark_custom_blue: "#298dac",
         ivory: "#fffcf0",
+        custom_yellow: "#FFCE2E",
+        custom_green: "#BDC161",
       },
     },
   },

@@ -7,7 +7,7 @@ const PercentageBar: React.FC = () => {
   const handlePercentageChange = (e: React.FormEvent<HTMLInputElement>) => {
     const newPercentage = parseFloat(e.currentTarget.value);
     if (!isNaN(newPercentage)) {
-      setPercentage(Math.max(0, Math.min(100, newPercentage))); // Clamp between 0 and 100
+      setPercentage(Math.max(0, Math.min(100, newPercentage)));
     }
   };
 
@@ -20,7 +20,7 @@ const PercentageBar: React.FC = () => {
         step="1"
         defaultValue={percentage.toString()}
         onInput={handlePercentageChange}
-        className="w-full transition-all duration-300 ease-in-out bg-dark_custom_blue"
+        className="w-full transition-all duration-300 ease-in-out accent-[#298dac]"
       />
       <div className="text-center">
         <span className="font-medium text-xs">{Math.round(percentage)}%</span>
