@@ -40,32 +40,40 @@ const PossibleFuture: React.FC = () => {
         </form>
 
         <div className="border border-gray-300 rounded-sm mt-3 h-[29rem] overflow-y-scroll">
-          {filteredJobs.map((job) => (
-            <div
-              key={job.id}
-              className="flex justify-between items-center border-b border-gray-300 p-3"
-            >
-              <div className="flex flex-col items-start">
-                <h3 className="text-[11px] font-semibold mb-1 text-start">
-                  {job.profile}
-                </h3>
-                <div className="flex">
-                  <p className="text-[9px] px-1 py-[1px] bg-light_green rounded-xl mr-1">
-                    <span className="font-semibold"> {job.missingSkill}</span>{" "}
-                    missing skill(s)
-                  </p>
-                  <p className="text-[9px] bg-light_yellow px-1 py-[1px] rounded-xl">
-                    <span className="font-semibold">{job.availableJobs}</span>{" "}
-                    job(s)
-                  </p>
+          {filteredJobs.length === 0 ? (
+            <div className="text-center p-3 mt-8">
+              <p className="text-xs text-gray-700">
+                No matching profiles found.
+              </p>
+            </div>
+          ) : (
+            filteredJobs.map((job) => (
+              <div
+                key={job.id}
+                className="flex justify-between items-center border-b border-gray-300 p-3"
+              >
+                <div className="flex flex-col items-start">
+                  <h3 className="text-[11px] font-semibold mb-1 text-start">
+                    {job.profile}
+                  </h3>
+                  <div className="flex">
+                    <p className="text-[9px] px-1 py-[1px] bg-light_green rounded-xl mr-1">
+                      <span className="font-semibold"> {job.missingSkill}</span>{" "}
+                      missing skill(s)
+                    </p>
+                    <p className="text-[9px] bg-light_yellow px-1 py-[1px] rounded-xl">
+                      <span className="font-semibold">{job.availableJobs}</span>{" "}
+                      job(s)
+                    </p>
+                  </div>
+                </div>
+                <div className="flex gap-1 cursor-pointer">
+                  <BiPlusCircle color="#BDC161" fontSize="19" />
+                  <BiChevronRightCircle color="#298dac" fontSize="19" />
                 </div>
               </div>
-              <div className="flex gap-1 cursor-pointer">
-                <BiPlusCircle color="#BDC161" fontSize="19" />
-                <BiChevronRightCircle color="#298dac" fontSize="19" />
-              </div>
-            </div>
-          ))}
+            ))
+          )}
         </div>
 
         <div className="my-5">
