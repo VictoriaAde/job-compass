@@ -1,4 +1,7 @@
 "use client";
+import { AiOutlineMinusCircle } from "react-icons/ai";
+import { BiChevronRightCircle } from "react-icons/bi";
+
 const Compass: React.FC = () => {
   return (
     <div className="relative flex justify-center items-center">
@@ -17,7 +20,7 @@ const Compass: React.FC = () => {
         </div>
       </div>
       {/* green line */}
-      <div className="absolute top-[6.5rem] left-[15rem] w-1 h-56 bg-[#72A840] z-20 transform rotate-[-31deg]"></div>
+      <div className="absolute top-[6.2rem] left-[15rem] w-1 h-56 bg-[#72A840] z-20 transform rotate-[-31deg]"></div>
       {/* triangles */}
       <div className="absolute">
         <div className="custom_clip_path w-40 h-64 bg-[#BFC3D1] transform rotate-[-71deg] absolute top-24 left-[-10rem]"></div>
@@ -34,38 +37,65 @@ const Compass: React.FC = () => {
       <div className="absolute top-60 z-50">
         {/* yellow background */}
         <div className="absolute top-[-9rem] left-[-10rem]">
+          <span className="absolute bottom-[-8px] right-0">
+            <AiOutlineMinusCircle color="#C83327" />
+          </span>
           <span className="bg-[#FFCF2E] text-xs text-black py-2 pr-6 pl-3 rounded-2xl font-bold whitespace-nowrap">
             Baker
           </span>
+          <span className="absolute bottom-[-8px] left-0">
+            <BiChevronRightCircle color="#298dac" fontSize="19" />
+          </span>
         </div>
         <div className="absolute top-[-6rem] left-36">
+          <span className="absolute bottom-[-8px] right-0">
+            <AiOutlineMinusCircle color="#C83327" />
+          </span>
           <span className="bg-[#FFCF2E] text-xs text-black py-2 px-4 rounded-2xl font-bold whitespace-nowrap">
             IT Manager
+          </span>
+          <span className="absolute bottom-[-8px] left-0">
+            <BiChevronRightCircle color="#298dac" fontSize="19" />
           </span>
         </div>
 
         {/* blue background */}
         <div className="absolute top-14 left-[-16rem]">
+          <span className="absolute bottom-[-8px] right-0">
+            <AiOutlineMinusCircle color="#C83327" />
+          </span>
           <span className="bg-[#2ECCFC] text-xs text-black py-2 px-4 rounded-2xl font-bold whitespace-nowrap">
             Node.js Backend
           </span>
         </div>
         <div className="absolute top-64 left-36">
+          <span className="absolute bottom-[-8px] right-0">
+            <AiOutlineMinusCircle color="#C83327" />
+          </span>
           <span className="bg-[#2ECCFC] text-xs text-black py-2 px-4 rounded-2xl font-bold whitespace-nowrap">
             React Developer
           </span>
         </div>
         <div className="absolute top-24 left-44">
+          <span className="absolute bottom-[-8px] right-0">
+            <AiOutlineMinusCircle color="#C83327" />
+          </span>
           <span className="bg-[#2ECCFC] text-xs text-black py-2 px-4 rounded-2xl font-bold whitespace-nowrap">
             Backend Developer
           </span>
         </div>
         <div className="absolute top-80 left-[-5rem]">
+          <span className="absolute bottom-[-8px] right-0">
+            <AiOutlineMinusCircle color="#C83327" />
+          </span>
           <span className="bg-[#2ECCFC] text-xs text-black py-2 px-4 rounded-2xl font-bold whitespace-nowrap">
             Full Stack Developer
           </span>
         </div>
         <div className="absolute top-[16.5rem] right-32">
+          <span className="absolute bottom-[-8px] right-0">
+            <AiOutlineMinusCircle color="#C83327" />
+          </span>
           <span className="bg-[#2ECCFC] text-xs text-black py-2 px-4 rounded-2xl font-bold whitespace-nowrap">
             HTML Programmer
           </span>
