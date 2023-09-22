@@ -37,6 +37,9 @@ const Compass: React.FC = () => {
       <div className="absolute top-60 z-50">
         {/* yellow background */}
         <div className="absolute top-[-9rem] left-[-10rem]">
+          <span className="absolute top-[-8px] right-0 bg-[#B7911D] text-[0.4rem] text-white font-bold p-1 rounded-full">
+            43
+          </span>
           <span className="absolute bottom-[-8px] right-0">
             <AiOutlineMinusCircle color="#C83327" />
           </span>
@@ -48,6 +51,9 @@ const Compass: React.FC = () => {
           </span>
         </div>
         <div className="absolute top-[-6rem] left-36">
+          <span className="absolute top-[-8px] right-0 bg-[#B7911D] text-[0.4rem] text-white font-bold p-1 rounded-full">
+            3
+          </span>
           <span className="absolute bottom-[-8px] right-0">
             <AiOutlineMinusCircle color="#C83327" />
           </span>
@@ -61,6 +67,9 @@ const Compass: React.FC = () => {
 
         {/* blue background */}
         <div className="absolute top-14 left-[-16rem]">
+          <span className="absolute top-[-8px] right-0 bg-[#08B0E5] text-[0.4rem] text-white font-bold p-1 rounded-full">
+            99+
+          </span>
           <span className="absolute bottom-[-8px] right-0">
             <AiOutlineMinusCircle color="#C83327" />
           </span>
@@ -69,6 +78,9 @@ const Compass: React.FC = () => {
           </span>
         </div>
         <div className="absolute top-64 left-36">
+          <span className="absolute top-[-8px] right-0 bg-[#08B0E5] text-[0.4rem] text-white font-bold p-1 rounded-full">
+            20
+          </span>
           <span className="absolute bottom-[-8px] right-0">
             <AiOutlineMinusCircle color="#C83327" />
           </span>
@@ -77,6 +89,9 @@ const Compass: React.FC = () => {
           </span>
         </div>
         <div className="absolute top-24 left-44">
+          <span className="absolute top-[-8px] right-0 bg-[#08B0E5] text-[0.4rem] text-white font-bold p-1 rounded-full">
+            20
+          </span>
           <span className="absolute bottom-[-8px] right-0">
             <AiOutlineMinusCircle color="#C83327" />
           </span>
@@ -85,6 +100,9 @@ const Compass: React.FC = () => {
           </span>
         </div>
         <div className="absolute top-80 left-[-5rem]">
+          <span className="absolute top-[-8px] right-0 bg-[#08B0E5] text-[0.4rem] text-white font-bold p-1 rounded-full">
+            15
+          </span>
           <span className="absolute bottom-[-8px] right-0">
             <AiOutlineMinusCircle color="#C83327" />
           </span>
@@ -93,6 +111,9 @@ const Compass: React.FC = () => {
           </span>
         </div>
         <div className="absolute top-[16.5rem] right-32">
+          <span className="absolute top-[-8px] right-0 bg-[#08B0E5] text-[0.4rem] text-white font-bold p-1 rounded-full">
+            10
+          </span>
           <span className="absolute bottom-[-8px] right-0">
             <AiOutlineMinusCircle color="#C83327" />
           </span>
@@ -103,6 +124,9 @@ const Compass: React.FC = () => {
 
         {/* green background */}
         <div className="absolute top-[11rem] left-[-4rem]">
+          <span className="absolute top-[-8px] right-0 bg-[#5A743E] text-[0.4rem] text-white font-bold p-1 rounded-full">
+            20
+          </span>
           <span className="bg-[#75A741] text-xs text-white py-2 px-4 rounded-2xl font-bold whitespace-nowrap">
             Web Developer
           </span>
