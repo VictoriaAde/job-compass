@@ -8,6 +8,8 @@
 
 body {
   background: var(--ivory);
+  width: 1350px;
+  max-width: 1350px;
 }
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button,

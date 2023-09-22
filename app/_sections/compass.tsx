@@ -1,119 +1,8 @@
 "use client";
-// import React, { useEffect } from "react";
-// import Chart from "react-apexcharts";
-
 const Compass: React.FC = () => {
-  // const options = {
-  //   chart: {
-  //     id: "jobCompass",
-  //     toolbar: {
-  //       show: false,
-  //     },
-  //   },
-
-  //   yaxis: [
-  //     {
-  //       seriesName: "s1",
-  //     },
-  //     {
-  //       seriesName: "s2",
-  //     },
-  //     {
-  //       seriesName: "s3",
-  //     },
-  //     {
-  //       seriesName: "s4",
-  //     },
-  //     {
-  //       seriesName: "s5",
-  //     },
-  //     {
-  //       seriesName: "s6",
-  //     },
-  //     {
-  //       seriesName: "s7",
-  //     },
-  //     {
-  //       seriesName: "s8",
-  //     },
-  //   ],
-  //   xaxis: {
-  //     // categories: [
-  //     //   "Doctor, Lawyer, President, Teacher, Cook, Fashion, Cashier (s1)",
-  //     //   "Teacher, Cook, Fashion, Cashier (s2)",
-  //     // ],
-  //     categories: [
-  //       "Baker",
-  //       "IT Manager",
-  //       "Backend Developer",
-  //       "React Developer",
-  //       "Full Stack Developer",
-  //       "HTML Programmer",
-  //       "NodeJS Backend",
-  //       "HTML Programmer",
-  //     ],
-  //   },
-  //   stroke: {
-  //     show: true,
-  //     width: 7,
-  //     colors: ["#C5C3C5", "#C5C3C5", "#C5C3C5"],
-  //     dashArray: 0,
-  //   },
-  //   plotOptions: {
-  //     radar: {
-  //       size: 200,
-  //       polygons: {
-  //         strokeColor: "#FF0000",
-
-  //         fill: {
-  //           colors: ["#fff", "#C5C3C5", "#fff"],
-  //         },
-  //       },
-  //     },
-  //   },
-  //   fill: {
-  //     // opacity: ,
-  //     colors: ["#fff"],
-  //   },
-  // };
-
-  // const series = [
-  //   {
-  //     name: "s1",
-  //     data: [30, 70, 45, 50, 49, 60, 70, 91],
-  //   },
-  //   {
-  //     name: "s2",
-  //     data: [50, 70, 45, 100, 20, 60, 80, 10],
-  //   },
-  //   {
-  //     name: "s3",
-  //     data: [60, 20, 10, 10, 50, 70, 50, 70],
-  //   },
-  //   {
-  //     name: "s4",
-  //     data: [60, 80, 45, 80, 45, 100, 50, 70],
-  //   },
-  //   {
-  //     name: "s5",
-  //     data: [60, 80, 45, 50, 49, 45, 100, 20],
-  //   },
-  //   {
-  //     name: "s6",
-  //     data: [60, 80, 45, 100, 20, 10, 50, 70],
-  //   },
-  //   {
-  //     name: "s7",
-  //     data: [30, 70, 45, 50, 49, 60, 70, 91],
-  //   },
-  //   {
-  //     name: "s8",
-  //     data: [60, 80, 45, 50, 49, 45, 100, 20],
-  //   },
-  // ];
-
   return (
-    <div className="relative mt-14 flex justify-center items-center">
+    <div className="relative flex justify-center items-center">
+      {/* circles */}
       <div className="flex justify-center items-center border-[30px] border-[#BFC3D1] rounded-full w-[620px] h-[620px]">
         <div className="border-[11px] border-[#989CAB] rounded-full w-[570px] h-[570px]">
           <div className=" border-[15px] border-[#F7F6F7] rounded-full w-[550px] h-[550px] flex justify-center items-center">
@@ -127,22 +16,92 @@ const Compass: React.FC = () => {
           </div>
         </div>
       </div>
-
+      {/* green line */}
+      <div className="absolute top-[6.5rem] left-[15rem] w-1 h-56 bg-[#72A840] z-20 transform rotate-[-31deg]"></div>
+      {/* triangles */}
       <div className="absolute">
         <div className="custom_clip_path w-40 h-64 bg-[#BFC3D1] transform rotate-[-71deg] absolute top-24 left-[-10rem]"></div>
         <div className="custom_clip_path w-40 h-64 bg-[#BFC3D1] transform rotate-[-124deg] absolute top-52 left-[-5rem]"></div>
         <div className="custom_clip_path w-36 h-56 bg-[#BFC3D1] transform rotate-[-20deg] absolute top-20 left-[-2rem]"></div>
-        <div className="custom_clip_path w-40 h-64 bg-[#BFC3D1] transform rotate-[44deg] absolute top-4 left-28"></div>
+        <div className="custom_clip_path w-40 h-64 bg-[#75A741] transform rotate-[44deg] absolute top-4 left-28"></div>
         <div className="custom_clip_path w-40 h-64 bg-[#BFC3D1] transform rotate-[135deg] absolute top-52 left-24"></div>
-        <div className="custom_clip_path w-40 h-64 bg-[#BFC3D1] transform rotate-90 absolute top-32 left-36"></div>
-        <div className="custom_clip_path w-40 h-64 bg-[#BFC3D1]"></div>
+        <div className="custom_clip_path w-40 h-64 bg-[#BEC2D1] transform rotate-90 absolute top-32 left-36"></div>
+        <div className="custom_clip_path w-40 h-64 bg-[#BEC2D1]"></div>
         <div className="custom_clip_path w-40 h-64 bg-[#BFC3D1] transform rotate-180"></div>
       </div>
-      {/* <div className="row">
-        <div className="mixed-chart" id="jobCompass">
-          <Chart options={options} series={series} type="radar" />
+
+      {/* profiles */}
+      <div className="absolute top-60 z-50">
+        {/* yellow background */}
+        <div className="absolute top-[-9rem] left-[-10rem]">
+          <span className="bg-[#FFCF2E] text-xs text-black py-2 pr-6 pl-3 rounded-2xl font-bold whitespace-nowrap">
+            Baker
+          </span>
         </div>
-      </div> */}
+        <div className="absolute top-[-6rem] left-36">
+          <span className="bg-[#FFCF2E] text-xs text-black py-2 px-4 rounded-2xl font-bold whitespace-nowrap">
+            IT Manager
+          </span>
+        </div>
+
+        {/* blue background */}
+        <div className="absolute top-14 left-[-16rem]">
+          <span className="bg-[#2ECCFC] text-xs text-black py-2 px-4 rounded-2xl font-bold whitespace-nowrap">
+            Node.js Backend
+          </span>
+        </div>
+        <div className="absolute top-64 left-36">
+          <span className="bg-[#2ECCFC] text-xs text-black py-2 px-4 rounded-2xl font-bold whitespace-nowrap">
+            React Developer
+          </span>
+        </div>
+        <div className="absolute top-24 left-44">
+          <span className="bg-[#2ECCFC] text-xs text-black py-2 px-4 rounded-2xl font-bold whitespace-nowrap">
+            Backend Developer
+          </span>
+        </div>
+        <div className="absolute top-80 left-[-5rem]">
+          <span className="bg-[#2ECCFC] text-xs text-black py-2 px-4 rounded-2xl font-bold whitespace-nowrap">
+            Full Stack Developer
+          </span>
+        </div>
+        <div className="absolute top-[16.5rem] right-32">
+          <span className="bg-[#2ECCFC] text-xs text-black py-2 px-4 rounded-2xl font-bold whitespace-nowrap">
+            HTML Programmer
+          </span>
+        </div>
+
+        {/* green background */}
+        <div className="absolute top-[11rem] left-[-4rem]">
+          <span className="bg-[#75A741] text-xs text-white py-2 px-4 rounded-2xl font-bold whitespace-nowrap">
+            Web Developer
+          </span>
+        </div>
+
+        {/* normal border */}
+        <div className="absolute top-[-5rem] left-[-9rem]">
+          <span className="border border-[#75A741] bg-white text-[#75A741] text-xs py-1 px-2 rounded-md font-bold whitespace-nowrap">
+            Baking cakes
+          </span>
+        </div>
+        <div className="absolute top-5 left-[4rem]">
+          <span className="border border-[#75A741] bg-white text-[#75A741] text-xs py-1 px-2 rounded-md font-bold whitespace-nowrap">
+            C++
+          </span>
+        </div>
+        <div className="absolute top-[-2rem] left-28">
+          <span className="border border-[#75A741] bg-white text-[#75A741] text-xs py-1 px-2 rounded-md font-bold whitespace-nowrap">
+            UML
+          </span>
+        </div>
+
+        {/* Dotted border */}
+        <div className="absolute top-0 left-[-5rem]">
+          <span className="border border-[#75A741] border-dashed bg-white text-[#75A741] text-xs py-1 px-2 rounded-md font-bold whitespace-nowrap">
+            French
+          </span>
+        </div>
+      </div>
     </div>
   );
 };
