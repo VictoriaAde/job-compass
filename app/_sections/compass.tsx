@@ -24,7 +24,7 @@ const Compass: React.FC = () => {
       {/* triangles */}
       <div className="absolute">
         <div className="custom_clip_path w-40 h-64 bg-[#BFC3D1] transform rotate-[-71deg] absolute top-24 left-[-10rem]"></div>
-        <div className="custom_clip_path w-40 h-64 bg-[#BFC3D1] transform rotate-[-124deg] absolute top-52 left-[-5rem]"></div>
+        <div className="custom_clip_path w-40 h-64 bg-[#75A741] transform rotate-[-124deg] absolute top-52 left-[-5rem]"></div>
         <div className="custom_clip_path w-36 h-56 bg-[#BFC3D1] transform rotate-[-20deg] absolute top-20 left-[-2rem]"></div>
         <div className="custom_clip_path w-40 h-64 bg-[#75A741] transform rotate-[44deg] absolute top-4 left-28"></div>
         <div className="custom_clip_path w-40 h-64 bg-[#BFC3D1] transform rotate-[135deg] absolute top-52 left-24"></div>
@@ -110,16 +110,25 @@ const Compass: React.FC = () => {
 
         {/* normal border */}
         <div className="absolute top-[-5rem] left-[-9rem]">
+          <span className="absolute top-[-14px] right-0  text-[0.6rem] text-black font-bold ">
+            76(%)
+          </span>
           <span className="border border-[#75A741] bg-white text-[#75A741] text-xs py-1 px-2 rounded-md font-bold whitespace-nowrap">
             Baking cakes
           </span>
         </div>
         <div className="absolute top-5 left-[4rem]">
+          <span className="absolute top-[-14px] right-0 text-[0.6rem] text-black font-bold ">
+            46(%)
+          </span>
           <span className="border border-[#75A741] bg-white text-[#75A741] text-xs py-1 px-2 rounded-md font-bold whitespace-nowrap">
             C++
           </span>
         </div>
         <div className="absolute top-[-2rem] left-28">
+          <span className="absolute top-[-14px] right-0 text-[0.6rem] text-black font-bold ">
+            20(%)
+          </span>
           <span className="border border-[#75A741] bg-white text-[#75A741] text-xs py-1 px-2 rounded-md font-bold whitespace-nowrap">
             UML
           </span>
@@ -127,6 +136,9 @@ const Compass: React.FC = () => {
 
         {/* Dotted border */}
         <div className="absolute top-0 left-[-5rem]">
+          <span className="absolute top-[-14px] right-0 text-[0.6rem] text-black font-bold ">
+            43(%)
+          </span>
           <span className="border border-[#75A741] border-dashed bg-white text-[#75A741] text-xs py-1 px-2 rounded-md font-bold whitespace-nowrap">
             French
           </span>
