@@ -15,3 +15,6 @@ input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration {
   display: none;
 }
+.custom_clip_path {
+  clip-path: polygon(50% 0%, 26% 100%, 77% 100%);
+}
