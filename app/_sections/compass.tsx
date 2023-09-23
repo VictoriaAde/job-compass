@@ -29,7 +29,7 @@ const Compass: React.FC = () => {
         <div className="custom_clip_path w-40 h-64 bg-[#75A741] transform rotate-[44deg] absolute top-4 left-28"></div>
         <div className="custom_clip_path w-40 h-64 bg-[#BFC3D1] transform rotate-[135deg] absolute top-52 left-24"></div>
         <div className="custom_clip_path w-40 h-64 bg-[#BEC2D1] transform rotate-90 absolute top-32 left-36"></div>
-        <div className="custom_clip_path w-40 h-64 bg-[#BEC2D1]"></div>
+        <div className="custom_clip_path w-40 h-64 bg-[#989CAB]"></div>
         <div className="custom_clip_path w-40 h-64 bg-[#BFC3D1] transform rotate-180"></div>
       </div>
 
@@ -64,6 +64,9 @@ const Compass: React.FC = () => {
             <BiChevronRightCircle color="#298dac" fontSize="19" />
           </span>
         </div>
+
+        {/* curved line */}
+        <div className="absolute top-[-12.4rem] right-48 -mt-1 border-t-2 border-l-2 border-gray-800 border-dashed rounded-full w-12 h-32 transform rotate-[-88deg] origin-center"></div>
 
         {/* blue background */}
         <div className="absolute top-14 left-[-16rem]">
