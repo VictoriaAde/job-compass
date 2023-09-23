@@ -68,11 +68,22 @@ const Compass: React.FC = () => {
         {/* curved line */}
         <div className="absolute top-[-12.4rem] right-48 -mt-1 border-t-2 border-l-2 border-gray-800 border-dashed rounded-full w-12 h-32 transform rotate-[-88deg] origin-center"></div>
         {/* colored oval shapes */}
-        <div className="absolute -top-[17rem]  right-48 transform rotate-[-25deg] ">
+        <p className="text-xs absolute -top-64  right-80 font-semibold">
+          <span className="whitespace-nowrap"> Not Required -</span>
+          <span className="">Yet Acquired</span>
+        </p>
+        <p className="text-xs absolute -top-64   right-32   font-semibold">
+          Required - <span className="whitespace-nowrap ">To Acquire</span>
+        </p>
+        <p className="text-xs absolute -top-44 right-52 font-semibold whitespace-nowrap ">
+          Required & Acquired
+        </p>
+        <div className="absolute -top-[16.5rem] right-60 transform rotate-[-25deg] ">
           <span className="bg-[#049CF7] w-20 h-14 absolute right-8  custom-border-radius"></span>
           <span className="bg-[#5CD235] w-16 h-12 transform rotate-[6deg] absolute right-0 top-5 custom-round-border-radius z-10 border border-gray-600"></span>
           <span className="bg-[#EC7167] w-20 h-14 absolute -left-10 top-8 custom-border-radius"></span>
         </div>
+        <span className="text-xs absolute top-8">Required & Acquired</span>
         {/* blue background */}
         <div className="absolute top-14 left-[-16rem]">
           <span className="absolute top-[-8px] right-0 bg-[#08B0E5] text-[0.3rem] text-white w-4 h-4 flex justify-center items-center  font-bold p-1 rounded-full">
