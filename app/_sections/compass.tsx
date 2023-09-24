@@ -64,26 +64,41 @@ const Compass: React.FC = () => {
             <BiChevronRightCircle color="#298dac" fontSize="19" />
           </span>
         </div>
-
+        {/* black box */}
+        <div className="absolute -top-44 left-40 transform rotate-[33deg] ">
+          <div className="w-44 h-8 bg-gradient-to-r from-black via-gray-600 to-black rounded-t-2xl rounded-b-md flex items-center justify-between border-b p-2">
+            <p className="text-[0.6rem] text-white font-semibold flex gap-1">
+              <span className="text-black bg-gray-200 px-1">?</span> IT Mgr
+              (Apple, Brussels){" "}
+            </p>
+            <BiChevronRightCircle color="#298dac" fontSize="15" />
+          </div>
+          <div className="w-44 h-8 bg-gradient-to-r from-black via-gray-600 to-black rounded-t-md rounded-b-2xl flex items-center justify-between text-right p-2">
+            <p className="text-[0.6rem] text-white font-semibold flex gap-1">
+              <span className="text-black bg-gray-200  px-1">?</span> IT Mgr
+              (IBM Brugge){" "}
+            </p>
+            <BiChevronRightCircle color="#298dac" fontSize="15" />
+          </div>
+        </div>
         {/* curved line */}
         <div className="absolute top-[-12.4rem] right-48 -mt-1 border-t-2 border-l-2 border-gray-800 border-dashed rounded-full w-12 h-32 transform rotate-[-88deg] origin-center"></div>
         {/* colored oval shapes */}
-        <p className="text-xs absolute -top-64  right-80 font-semibold">
+        <p className="text-[0.6rem] absolute -top-64  right-80 font-bold">
           <span className="whitespace-nowrap"> Not Required -</span>
           <span className="">Yet Acquired</span>
         </p>
-        <p className="text-xs absolute -top-64   right-32   font-semibold">
+        <p className="text-[0.6rem] absolute -top-64   right-32   font-bold">
           Required - <span className="whitespace-nowrap ">To Acquire</span>
         </p>
-        <p className="text-xs absolute -top-44 right-52 font-semibold whitespace-nowrap ">
-          Required & Acquired
+        <p className="text-[0.6rem] absolute -top-[11.5rem] right-52 font-bold">
+          <span className="whitespace-nowrap">Required &</span> Acquired
         </p>
         <div className="absolute -top-[16.5rem] right-60 transform rotate-[-25deg] ">
           <span className="bg-[#049CF7] w-20 h-14 absolute right-8  custom-border-radius"></span>
           <span className="bg-[#5CD235] w-16 h-12 transform rotate-[6deg] absolute right-0 top-5 custom-round-border-radius z-10 border border-gray-600"></span>
           <span className="bg-[#EC7167] w-20 h-14 absolute -left-10 top-8 custom-border-radius"></span>
         </div>
-        <span className="text-xs absolute top-8">Required & Acquired</span>
         {/* blue background */}
         <div className="absolute top-14 left-[-16rem]">
           <span className="absolute top-[-8px] right-0 bg-[#08B0E5] text-[0.3rem] text-white w-4 h-4 flex justify-center items-center  font-bold p-1 rounded-full">
@@ -107,7 +122,7 @@ const Compass: React.FC = () => {
             React Developer
           </span>
         </div>
-        <div className="absolute top-24 left-44">
+        <div className="absolute top-24 left-40">
           <span className="absolute top-[-8px] right-0 bg-[#08B0E5] text-[0.4rem] text-white w-4 h-4 flex justify-center items-center  font-bold p-1 rounded-full">
             20
           </span>
@@ -140,7 +155,6 @@ const Compass: React.FC = () => {
             HTML Programmer
           </span>
         </div>
-
         {/* green background */}
         <div className="absolute top-[11rem] left-[-4rem]">
           <span className="absolute top-[-8px] right-0 bg-[#5A743E] text-[0.4rem] text-white w-4 h-4 flex justify-center items-center  font-bold p-1 rounded-full">
@@ -150,7 +164,6 @@ const Compass: React.FC = () => {
             Web Developer
           </span>
         </div>
-
         {/* normal border */}
         <div className="absolute top-[-5rem] left-[-9rem]">
           <span className="absolute top-[-14px] right-0  text-[0.6rem] text-black font-bold ">
@@ -176,7 +189,6 @@ const Compass: React.FC = () => {
             UML
           </span>
         </div>
-
         {/* Dotted border */}
         <div className="absolute top-0 left-[-5rem]">
           <span className="absolute top-[-14px] right-0 text-[0.6rem] text-black font-bold ">
