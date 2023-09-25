@@ -35,9 +35,9 @@ const PossibleFuture: React.FC = () => {
             value={searchQuery}
             onChange={(e) => handleSearchQueryChange(e.target.value)}
           />
-          <button className="f bg-gray-500 px-1">
+          <span className="f bg-gray-500 px-1 flex justify-center items-center cursor-text">
             <AiOutlineSearch color="#fff" />
-          </button>
+          </span>
         </form>
 
         <div className="border border-gray-300 rounded-sm mt-3 h-[29rem] overflow-y-scroll">
