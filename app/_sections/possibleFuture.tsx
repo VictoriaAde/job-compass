@@ -4,14 +4,15 @@ import { AiOutlineSearch } from "react-icons/ai";
 import { possibleJobs } from "../../utils/data";
 import { BiPlusCircle } from "react-icons/bi";
 import { BiChevronRightCircle } from "react-icons/bi";
-import debounce from "lodash.debounce";
+import useDebouncedEventHandler from "../../utils/debounce";
 
 const PossibleFuture: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState<string>("");
+  const debounceDelay = 100;
 
-  const handleSearchQueryChange = debounce((query: string) => {
+  const handleSearchQueryChange = useDebouncedEventHandler((query: string) => {
     setSearchQuery(query);
-  }, 200);
+  }, debounceDelay);
 
   const filteredJobs = possibleJobs.filter((job) =>
     job.profile.toLowerCase().includes(searchQuery.toLowerCase())
