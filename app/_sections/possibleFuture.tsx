@@ -8,7 +8,7 @@ import useDebouncedEventHandler from "../../utils/debounce";
 
 const PossibleFuture: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState<string>("");
-  const debounceDelay = 100;
+  const debounceDelay = 150;
 
   const handleSearchQueryChange = useDebouncedEventHandler((query: string) => {
     setSearchQuery(query);
