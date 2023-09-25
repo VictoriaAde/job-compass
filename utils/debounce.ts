@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 
 type CallbackFunction = (value: string) => void;
 
@@ -6,7 +6,7 @@ const useDebouncedEventHandler = (
   callback: CallbackFunction,
   delay: number
 ) => {
-  let debounceTimer: NodeJS.Timeout | null = null; // Initialize with null
+  let debounceTimer: NodeJS.Timeout | null = null;
 
   const debouncedEventHandler = (value: string) => {
     if (debounceTimer) {
